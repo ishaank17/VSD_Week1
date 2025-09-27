@@ -2,10 +2,6 @@
 <details>
   <summary>Day 1 - Introduction to Verilog RTL Design and Synthesis</summary>
 
-# RTL Design and Synthesis Workshop Notes
-
-This repository contains comprehensive notes from a workshop covering RTL design simulation and synthesis using open-source tools.
-
 
 ## RTL Simulation
 
@@ -159,7 +155,8 @@ yosys> write_verilog netlist.v
 Content for Day 2 goes here.
 
 </details> <details> <summary>Day 3 - Combinational and Sequential Optimizations</summary>
-## Combinational Optimization
+
+  ## Combinational Optimization
 
 1. **Constant propagation**
 2. **Boolean simplification** using K‑maps or Quine–McCluskey
