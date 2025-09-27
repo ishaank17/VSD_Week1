@@ -153,8 +153,6 @@ yosys> write_verilog netlist.v
 - **Sky130 PDK:** Process design kit with standard cell libraries
 </details> <details> <summary>Day 2 - Timing libs, Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles</summary>
 
-# RTL Design and Synthesis Workshop Notes - Day 2
-
 ## PVT in Liberty Files
 
 **PVT** stands for **Process, Voltage, and Temperature**. These three factors determine how silicon chips behave in real-world conditions:
@@ -383,6 +381,16 @@ Here when entered q0 value is the old value. Then it changes . This mimcs a flop
 BUT STILL BOTH CODES GIVE SAME OUTPUTS!!
 
 Due to this We run GLS on the Netlist and Match our Expectation and output of the circuit.
+
+
+ # LABS:
+1) **MUX**
+   <img width="1572" height="156" alt="image" src="https://github.com/user-attachments/assets/ec497281-598d-4592-9bfa-dae40f4a33f1" />
+   <img width="608" height="218" alt="image" src="https://github.com/user-attachments/assets/310d7610-0ac6-48b5-a6a8-b53c764b113d" />
+
+   GLS O/P
+   <img width="1835" height="505" alt="image" src="https://github.com/user-attachments/assets/9ca05782-44a7-409e-92de-329298181beb" />
+
  
 </details> 
 
