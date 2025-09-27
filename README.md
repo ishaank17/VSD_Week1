@@ -76,12 +76,12 @@
    * ![img11](https://github.com/user-attachments/assets/e032df7b-63a2-430f-9cb3-b74b7a17de66)
 
 4. **Dff-const4** - Optimization Ocourrs
-  * ![img12](<img width="1570" height="135" alt="image" src="https://github.com/user-attachments/assets/0bb5b8d9-c867-4d68-9781-4d4de9894f75" />)
-  * ![img13](<img width="598" height="479" alt="image" src="https://github.com/user-attachments/assets/da627113-e455-4d37-82a1-b8ce01a3e262" />)
+  * ![img12](https://github.com/user-attachments/assets/0bb5b8d9-c867-4d68-9781-4d4de9894f75)
+  * ![img13](https://github.com/user-attachments/assets/da627113-e455-4d37-82a1-b8ce01a3e262)
 
 5. **Dff-const5** - q change so no optimization
-  * ![img14](<img width="1563" height="120" alt="image" src="https://github.com/user-attachments/assets/7a0c916d-5b84-46e4-baf0-1b645086cb9f" />)
-  * ![img15](<img width="1506" height="232" alt="image" src="https://github.com/user-attachments/assets/8988f37d-add7-4a8a-8171-7aa3d0dff0f6" />)
+  * ![img14](https://github.com/user-attachments/assets/7a0c916d-5b84-46e4-baf0-1b645086cb9f)
+  * ![img15](https://github.com/user-attachments/assets/8988f37d-add7-4a8a-8171-7aa3d0dff0f6)
 
 ## Unused Output Optimization 
 
