@@ -155,17 +155,6 @@ yosys> write_verilog netlist.v
 
 # RTL Design and Synthesis Workshop Notes - Day 2
 
-# RTL Design and Synthesis Workshop Notes - Day 2
-
-## Table of Contents
-- [PVT in Liberty Files](#pvt-in-liberty-files)
-- [Cell Variants and Area](#cell-variants-and-area)
-- [Hierarchical Synthesis](#hierarchical-synthesis)
-- [Flip-Flop Reset Strategies](#flip-flop-reset-strategies)
-- [Yosys Flow for Sequential Logic](#yosys-flow-for-sequential-logic)
-- [Optimization Techniques](#optimization-techniques)
-- [Common Yosys Commands](#common-yosys-commands)
-
 ## PVT in Liberty Files
 
 **PVT** stands for **Process, Voltage, and Temperature**. These three factors determine how silicon chips behave in real-world conditions:
