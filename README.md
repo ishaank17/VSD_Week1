@@ -249,9 +249,74 @@ Content for Day 2 goes here.
    In case 2 three flop is needed which we see in the synthesis report. So the Output is not Optimized.
 
 </details> <details> <summary>Day 4 - GLS, Blocking vs Non-blocking and Synthesis-Simulation Mismatch</summary>
-Content for Day 4 goes here.
 
-</details> <details> <summary>Day 5 - Optimization In synthesis</summary>
+  ## What is GLS
+  GLS - Gate level Simulation.
+  When we write RTL Code we validate the code by testing it (compare with our expectation). Now we run the Testbench with Netlist as desiugn Under test. Logically Netlist is same as RTL Code. so Input and Outputs are same
+  ## Why GLS
+  1. **Verifly Logical corectness of design after sunthesis**
+  2. **Ensure the timing of Design is Met**
+## GLS Using Iverilog
+The Design is now GLS Model. We need to tell Verilog about the standared cells. The rest of the flow remains the same.
+The GLS Model Shud be timing aware.
+
+## What do we do in a GLS
+Design : assign y=(a&b)|c;
+Netlist: and a1(m,a,b);
+          or o1(Y,c,m);
+The Information about what and , or is in GL Verilog Model. This can be timing aware or just functional.Having timing aware check both functionality and timing.
+
+The Simulator simulates only when there is a change in input.
+
+## But why validate functionality if my design works and netlist is logically same as my design?
+Missing sensitivity List
+Blocking vs non Blocking assignment 
+Non standared verilog coding
+
+### Missing Sensitivity list:
+When doing always@(sel) is wrong as if sel is low and there is activity on i0 and these activitives cant be seen as simulator simulates only when Select changes (acts like a latch). Using always@(*) will give correct behaviour.
+
+### Blocking and Non Blocking
+  = :Blocking Statement ( execution happens in order of statement like c)
+  <=  :Non Blocking Statement (execution happens in parallel) so order doesnt matter.
+
+In a shift reg d->q0->q
+#### Blocking:
+  q=q0;
+  q0=d;
+
+  q0 is assigned to q .Then d is assign to q0,// works fine
+
+q0=d;
+q=q0;// by  this line q0 has value of d
+
+So it means there is only one flop and q and q0 are shorted.
+#### Non Blocking
+q0<=d;
+q<=q0; // order doesnt matter here either way we get the correct answer.
+
+ ### Some caveats 
+ output reg q0;
+  always@*
+  y=q0 & c;
+  q0=a|b;
+
+Here when entered q0 value is the old value. Then it changes . This mimcs a flop.
+<hr>
+
+ output reg q0;
+  always@*
+  q0=a|b;
+  y=q0 & c;
+// q0 is computed first and then the latest value is used so there is no flop behavior in this
+
+BUT STILL BOTH CODES GIVE SAME OUTPUTS!!
+
+Due to this We run GLS on the Netlist and Match our Expectation and output of the circuit.
+ 
+</details> 
+
+<details> <summary>Day 5 - Optimization In synthesis</summary>
 Content for Day 5 goes here.
 </details>
 
