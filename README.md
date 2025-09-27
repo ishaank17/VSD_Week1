@@ -251,13 +251,7 @@ Content for Day 2 goes here.
 </details> <details> <summary>Day 4 - GLS, Blocking vs Non-blocking and Synthesis-Simulation Mismatch</summary>
 Content for Day 4 goes here.
 
-</details> <details> <summary>Day 5 - Introduction to DFT</summary>
+</details> <details> <summary>Day 5 - Optimization In synthesis</summary>
 Content for Day 5 goes here.
+</details>
 
-</details> <details> <summary>Day 6 - Introduction to Logic Synthesis</summary>
-Content for Day 6 goes here.
-
-</details> <details> <summary>Day 7 - Basics of Static Timing Analysis (STA)</summary>
-Content for Day 7 goes here.
-
-</details> ```
