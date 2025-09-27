@@ -395,7 +395,8 @@ Due to this We run GLS on the Netlist and Match our Expectation and output of th
 </details> 
 
 <details> <summary>Day 5 - Optimization In synthesis</summary>
-## If-Else and Elif Ladder in Verilog
+
+  ## If-Else and Elif Ladder in Verilog
 
 The `if-else` and `else if` ("elif ladder") constructs in Verilog implement conditional logic with **priority**. In hardware, these synthesize into a chain of multiplexers:
 
