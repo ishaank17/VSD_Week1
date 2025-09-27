@@ -391,7 +391,12 @@ Due to this We run GLS on the Netlist and Match our Expectation and output of th
    GLS O/P
    <img width="1835" height="505" alt="image" src="https://github.com/user-attachments/assets/9ca05782-44a7-409e-92de-329298181beb" />
 
- 
+2) **BAD MUX**
+ Activity on i1 and i0 doesnt change the output. Makes it as if its a a flop.
+   <img width="1560" height="305" alt="image" src="https://github.com/user-attachments/assets/776f9b86-6c09-47ee-97de-63a916f908b9" />
+  But in The GLS Synthesis the MUX Workd just fine . This is Synth-Sim mismatch
+    <img width="1840" height="563" alt="image" src="https://github.com/user-attachments/assets/339c870f-fa43-4857-897c-c20cc6b076aa" />
+
 </details> 
 
 <details> <summary>Day 5 - Optimization In synthesis</summary>
